@@ -29,7 +29,7 @@ void Hotel::deleteChambre(Chambre chambreSupprimer) {
 }
 
 std::ostream &operator<<(std::ostream &os, Hotel &hotel) {
-        os << "Nom : " << hotel.nom() << "\nVille :" << hotel.ville() << ")" << "\n Description: " << hotel.identifiant() << std::endl;
+        os << "Nom : " << hotel.nom() << "\nVille :" << hotel.ville() << "\n identifiant : " << hotel.identifiant() << std::endl;
         return os;
     }
 
