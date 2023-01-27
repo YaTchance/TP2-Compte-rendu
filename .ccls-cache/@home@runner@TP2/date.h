@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 #ifndef DATE_H
 #define DATE_H
@@ -15,6 +16,7 @@ public:
   void updateYear(int year);
   void next();
   void back();
+  std::string toString();
 
 private:
   int _year;
@@ -25,6 +27,6 @@ private:
 bool isDate(int year, int month, int day);
 int getDaysInMonth(int month);
 int dayOfYear(Date d);
-std::string toString(Date d);
+
 
 #endif // DATE_H

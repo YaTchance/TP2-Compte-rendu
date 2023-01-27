@@ -8,9 +8,9 @@ int Chambre::numero() const { return _numero; }
 
 double Chambre::getPrix() { return _prix; }
 
-Types Chambre::type() const { return _type; }
+Types Chambre::type() { return _type; }
 
-std::string toStringTypes(Types t) {
+std::string Chambre::toStringTypes(Types t) {
 switch (t)
 {
 case Types::Single:
@@ -40,3 +40,10 @@ std::string Chambre::getChambre(){
 void Chambre::updatePrix(double prix){
    _prix = prix;
 }
+std::ostream& operator<<(std::ostream &os, Chambre& chambre) {
+        os << "Numéro : " << chambre.numero() << "\n Prix :" << chambre.getPrix() << "\n Type : " << chambre.toStringTypes(Types()) << std::endl;
+  return os;
+  }
+
+
+
