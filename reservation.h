@@ -5,7 +5,7 @@
 
 class Reservation{
 public:
-  Reservation(Date dateDebut, int nombreNuit, Hotel identifiantHotel, Chambre chambre, Client identifiantClient, double montantTotal);
+  Reservation(Date dateDebut, int nombreNuit, Hotel identifiantHotel, Chambre chambre, Client identifiantClient);
   Date dateDebut();
   int nombreNuit();
   Hotel identifiantHotel() const;
@@ -13,12 +13,12 @@ public:
   Client identitfiantClient() const;
   double montantTotal(); 
   std::string getReservation();
-  
+   
+
 private:
   Date _dateDebut;
   int _nombreNuit;
   Hotel _identifiantHotel;
   Chambre _chambre;
   Client _identifiantClient;
-  double _montantTotal;
 }

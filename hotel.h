@@ -14,8 +14,8 @@ public:
   std::string identifiant() const;
   std::vector<Chambre> chambres();
   std::string getHotel();
-  void addChambre();
-  void deleteChambre();
+  void addChambre(Chambre chambreAjouter);
+  void deleteChambre(Chambre chambreSupprimer);
 
 private:
   std::string _nom;

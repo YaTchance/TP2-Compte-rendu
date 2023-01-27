@@ -17,3 +17,13 @@ std::string Hotel::getHotel(){
   return std::string(nom() + " " + std::string(ville()) + " " + std::string(identifiant()) + " " + getChambre());
 };
 
+void Hotel::addChambre(Chambre  chambreAjouter) {
+  Hotel::_chambres.push_back(chambreAjouter);    
+  }
+
+void Hotel::deleteChambre(Chambre chambreSupprimer) {
+  for (int i=0; i++; i<chambres.size()){
+    if (chambreSupprimer.numero()==_chambres.at(i).numero()) {int k = i;}
+  _chambres.erase(_chambres.begin() + k);        
+    };
+}
