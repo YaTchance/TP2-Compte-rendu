@@ -14,8 +14,8 @@ public:
   std::string identifiant() const;
   std::vector<Chambre> chambres();
   std::string getHotel();
-  void addChambre(Chambre chambreAjouter);
-  void deleteChambre(Chambre chambreSupprimer);
+  void addChambre(Chambre);
+  void deleteChambre(Chambre);
   friend std::ostream &operator<<(std::ostream &os, Hotel &hotel);
   friend std::ostream &operator<<(std::ostream &os, const std::vector<Chambre *> &chambre);
 

@@ -3,6 +3,9 @@
 #include "hotel.h"
 #include "client.h"
 
+#ifndef RESERVATION_H
+#define RESERVATION_H
+
 class Reservation{
 public:
   Reservation(Date dateDebut, int nombreNuit, Hotel identifiantHotel, Chambre chambre, Client identifiantClient);
@@ -21,4 +24,5 @@ private:
   Hotel _identifiantHotel;
   Chambre _chambre;
   Client _identifiantClient;
-}
+};
+#endif // RESERVATION_H

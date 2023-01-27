@@ -8,9 +8,9 @@ int Chambre::numero() const { return _numero; }
 
 double Chambre::getPrix() { return _prix; }
 
-Types Chambre::type() const { return _type; }
+Types Chambre::type() { return _type; }
 
-std::string toStringTypes(Types t) {
+std::string Chambre::toStringTypes(Types t) {
 switch (t)
 {
 case Types::Single:

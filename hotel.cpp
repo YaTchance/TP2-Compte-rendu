@@ -18,22 +18,22 @@ std::string Hotel::getHotel(){
 };
 
 void Hotel::addChambre(Chambre  chambreAjouter) {
-  Hotel::_chambres.push_back(chambreAjouter);    
+  _chambres.push_back(chambreAjouter);    
   }
 
 void Hotel::deleteChambre(Chambre chambreSupprimer) {
-  for (int i=0; i++; i<chambres.size()){
-    if (chambreSupprimer.numero()==_chambres.at(i).numero()) {int k = i;}
-  _chambres.erase(_chambres.begin() + k);        
+  for (int i=0; i < _chambres.size(); i++){
+    if (chambreSupprimer.numero()==_chambres.at(i).numero()) 
+  _chambres.erase(_chambres.begin() + i);        
     };
 }
 
 std::ostream &operator<<(std::ostream &os, Hotel &hotel) {
-        os << "Nom : " << hotel.nom() << "\nVille :" << hotel.ville() << "\n identifiant : " << hotel.identifiant() << std::endl;
+        os << "Nom : " << hotel.nom() << "\n Ville :" << hotel.ville() << "\n identifiant : " << hotel.identifiant() << std::endl;
         return os;
     }
 
-std::ostream &operator<<(std::ostream &os, const std::vector<Chambre *> &chambre) {
+std::ostream &operator<<(std::ostream &os, std::vector<Chambre *> &chambre) {
         for (auto i: chambre) {
             os << *i;
         }

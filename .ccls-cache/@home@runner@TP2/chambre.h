@@ -11,7 +11,7 @@ public:
   Chambre(int numero, Types type, double prix);
   Chambre();
   int numero() const;
-  Types type() const;
+  Types type();
   double getPrix();
   void updatePrix(double prix);
   std::string getChambre();
