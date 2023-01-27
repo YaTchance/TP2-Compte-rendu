@@ -5,7 +5,7 @@
 #include "hotel.h"
 #include <vector>
 
-int main(int argc, char const *argv[]) {
+int main() {
   
 Client Cl1("Tchance ", "Ya ", "152536");
 Client Cl2("David ", "Flavien ", "151101");
@@ -20,7 +20,7 @@ Chambre C7(104, Types::Double, 125);
 Chambre C8(105, Types::Double, 125);
 Chambre C9(201, Types::Suite, 210);
 Chambre C10(202, Types::Suite, 210);
-
+  
 std::vector<Chambre> chambre;
   chambre.push_back(C1);
 
@@ -35,3 +35,4 @@ H1.addChambre(C8);
 H1.addChambre(C9);
 H1.addChambre(C10);
 }
+

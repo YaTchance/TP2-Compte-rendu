@@ -5,7 +5,7 @@
 #ifndef HOTEL_H
 #define HOTEL_H
 
-class Hotel: public Chambre{
+class Hotel{
 public:
   Hotel(std::string nom, std::string ville, std::string identifiant, std::vector<Chambre> chambres);
   Hotel();

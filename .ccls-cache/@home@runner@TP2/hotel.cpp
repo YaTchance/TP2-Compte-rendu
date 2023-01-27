@@ -14,7 +14,7 @@ std::string Hotel::identifiant() const { return _identifiant; }
 std::vector<Chambre> Hotel::chambres() { return _chambres; }
 
 std::string Hotel::getHotel(){
-  return std::string(nom() + " " + std::string(ville()) + " " + std::string(identifiant()) + " " + getChambre());
+  return std::string(nom() + " " + std::string(ville()) + " " + std::string(identifiant()));
 };
 
 void Hotel::addChambre(Chambre  chambreAjouter) {
@@ -39,4 +39,3 @@ std::ostream &operator<<(std::ostream &os, std::vector<Chambre *> &chambre) {
         }
         return os;
     }
-*/
