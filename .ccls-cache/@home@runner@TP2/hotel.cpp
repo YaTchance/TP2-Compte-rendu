@@ -28,12 +28,12 @@ void Hotel::deleteChambre(Chambre chambreSupprimer) {
     };
 }
 
-std::ostream &operator<<(std::ostream &os, Hotel &hotel) {
+std::ostream& operator<<(std::ostream &os, Hotel& hotel) {
         os << "Nom : " << hotel.nom() << "\n Ville :" << hotel.ville() << "\n identifiant : " << hotel.identifiant() << std::endl;
         return os;
     }
 
-std::ostream &operator<<(std::ostream &os, std::vector<Chambre *> &chambre) {
+std::ostream& operator<<(std::ostream &os, std::vector<Chambre *> &chambre) {
         for (auto i: chambre) {
             os << *i;
         }

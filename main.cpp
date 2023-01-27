@@ -23,7 +23,7 @@ Chambre C10(202, Types::Suite, 210);
   
 std::vector<Chambre> chambre;
   chambre.push_back(C1);
-
+  
 Hotel H1(" Le Ritz ", "Paris", "RITZ15PV", chambre);
 H1.addChambre(C2);
 H1.addChambre(C3);
@@ -34,5 +34,10 @@ H1.addChambre(C7);
 H1.addChambre(C8);
 H1.addChambre(C9);
 H1.addChambre(C10);
-}
+
+
+std::cout << H1 << std::endl;
+  }
+
+
 

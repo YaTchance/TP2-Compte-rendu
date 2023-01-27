@@ -16,8 +16,8 @@ public:
   std::string getHotel();
   void addChambre(Chambre);
   void deleteChambre(Chambre);
-  friend std::ostream &operator<<(std::ostream &os, Hotel &hotel);
-  friend std::ostream &operator<<(std::ostream &os, const std::vector<Chambre *> &chambre);
+  friend std::ostream& operator<<(std::ostream &os, Hotel& hotel);
+  friend std::ostream& operator<<(std::ostream &os, const std::vector<Chambre *> &chambre);
 
 private:
   std::string _nom;

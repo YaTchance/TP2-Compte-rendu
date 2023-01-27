@@ -9,7 +9,7 @@ public:
   std::string lastname() const;
   std::string getClient() const;
   std::string identifiant() const;
-  friend std::ostream &operator<<(std::ostream &os, Client &client);
+  friend std::ostream& operator<<(std::ostream &os, Client& client);
 
 private:
   std::string _firstname;

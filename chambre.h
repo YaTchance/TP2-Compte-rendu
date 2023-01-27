@@ -16,7 +16,7 @@ public:
   void updatePrix(double prix);
   std::string getChambre();
   std::string toStringTypes(Types t);
-  friend std::ostream &operator<<(std::ostream &os, Chambre &chambre);
+  friend std::ostream& operator<<(std::ostream &os, Chambre& chambre);
 private:
   Chambre* next;
   int _numero;

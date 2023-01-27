@@ -40,7 +40,10 @@ std::string Chambre::getChambre(){
 void Chambre::updatePrix(double prix){
    _prix = prix;
 }
-std::ostream &operator<<(std::ostream &os, Chambre &chambre) {
+std::ostream& operator<<(std::ostream &os, Chambre& chambre) {
         os << "Numéro : " << chambre.numero() << "\n Prix :" << chambre.getPrix() << "\n Type : " << chambre.toStringTypes(Types()) << std::endl;
   return os;
   }
+
+
+
