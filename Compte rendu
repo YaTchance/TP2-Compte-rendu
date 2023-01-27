@@ -1,0 +1,35 @@
+1	Répartition du travail :
+
+  Après avoir travaillé sur le TP 1, nous avons décidé de partir sur le TP 2 car notre niveau en C++ reste peu convaincant malgré nos efforts et de nombreux progrès.
+Ce deuxième TP vise à programmer de tel sorte qu’il soit possible de créer des hôtels contenant des chambres pouvant être réservées par des clients à des dates précises 
+en fonctions du prix ou du types de chambre voulu par les clients. 
+  Pour commencer nous nous sommes répartis le travail de telle sorte que chacun faisait son TP de son côté tout en s’aidant si des questions ou problèmes se soulevaient. 
+  Pour les classes Date et Client rien de surprenant a été créé, nous avons  juste créé les classes le plus basiquement avec leurs getters et setters.
+
+2	Déroulement :
+
+  Pour la classe Chambre, nous avons décidé de créer une énumération pour les types de chambre possible car cela permet de limiter ce qui peut être entré dans le type. 
+Nous avons par conséquent dû créer une méthode toStringTypes qui transforme nos types en string, pour cela nous avons utilisé un switch case qui regarde ce qui est 
+mis en argument provenant de l’énumération de type pour retourner un string. De plus, nous avons créé une méthode permettant de mettre à jour le prix d’une chambre. 
+Ensuite il fallait créer une classe Hôtel, nous avons donc décidé de hérité du public de la classe Chambre pour pouvoir créer notre vecteur répertoriant toutes 
+les chambres d’un hôtel en question. Ne sachant pas le nombre de chambre des hôtels et sachant que leur nombres peuvent varier  nous avons utilisé un vector qui est 
+plus permissif en terme d’ajout, de suppression d’éléments. De plus, l’ajout de méthodes, fonctions helpers pour ajouter et supprimer des chambres étant demandé 
+nous avons utilisé la fonction pushback des vecteurs pour ajouter et pour supprimer nous avons utilisé le numéro de la chambre à supprimer pour la retrouver dans l’hôtel
+et la supprimer. Enfin la dernière classe à créer était la classe Réservation qui prend en argument une date de début, un nombre de nuits, l’hôtel et la chambre réservée
+par un client. Ceci conclut la partie 1 qui concernait la création de toutes les classes utiles à ce TP.
+ 
+ 3	Problème rencontré :
+ 
+  Durant ce TP nous avons rencontré différents problèmes plus ou moins simple, idiot. 
+  En effet, nous avons notamment eu des difficultés concernant le fait de transformé l’énumération des types en string pour pouvoir afficher les informations 
+  car l’idée du switch case n’était pas la première et la plus évidente pour nous. De plus l’utilisation de la classe Chambre dans la classe Hôtel nous a posé 
+  des soucis au niveau de la synthase qui n’est pas toujours facile sachant que de base nous étions partis pour faire de l’héritage en donnait à la classe Hôtel 
+  l’accès au public de Chambre mais cela s’est avéré un peu trop compliqué pour nous. Enfin et pas les problèmes les plus simples ont été ceux avec la surcharge 
+  des opérateurs qui ne marchait pas à cause d’un manque de connaissance et de compréhension de l’utilité du faite de surcharger un opérateur.
+  
+  4	Conclusion générale :
+  
+  Pour conclure ce TP nous a permis de nous améliorer en programmation de C++ notamment avec l’utilisation de différents outils tel que les vecteurs, 
+  les énumérations et la surcharge d’opérateur notamment celui concernant l’affichage (cout <<). Nous avons fait des erreurs de choix de comment faire nos méthodes, 
+  fonctions helpers qui nous ont permis de ne plus les reproduire grâce à l’intervention des professeurs ou de camarades de classes plus talentueux et plus expérimentés 
+  que nous.
